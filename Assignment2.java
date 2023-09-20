@@ -30,6 +30,28 @@ public class Assignment2 {
         }
         return max;
     }
+    public static int sumOfOdd(int[] arr){
+        int sum=0;
+        for(int i=0; i<arr.length;i++)
+        {int num=arr[i];
+
+            if(i%2==1){
+            sum=sum+num;
+            }
+        }
+        return sum;
+    }
+    public static int sumOfEven(int[] arr){
+        int sum=0;
+        for(int i=0; i<arr.length;i++)
+        {int num=arr[i];
+
+            if(i%2==0){
+            sum=sum+num;
+            }
+        }
+        return sum;
+    }
     public static void main(String[] args) {
         int[] test = createArray(6);
         System.out.println(Arrays.toString(test));
@@ -37,6 +59,10 @@ public class Assignment2 {
         System.out.println(minOfArr(test));
         
     }
+    
+
+
+
 }
     
 
