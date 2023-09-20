@@ -71,10 +71,10 @@ public class Assignment2 {
     public static void main(String[] args) {
         int[] test = createArray(6);
         System.out.println(Arrays.toString(test));
-        System.out.println(maxOfArr(test));
+        /*System.out.println(maxOfArr(test));
         System.out.println(minOfArr(test));
         System.out.println(Arrays.toString(findAverageArr(test)));
-        
+        */
         Scanner sc = new Scanner(System.in);
         int choice = 0;
         do{
@@ -100,12 +100,13 @@ public class Assignment2 {
                     System.out.println(maxOfArr(test));
             }
     
-           /* *else if (choice == 2)      
-               //*  averageArray(choice);
+           else if (choice == 2)      
+                findAverageArr(test);
     
             else if (choice == 3){
-                //sumOfElements(choice);
-            } */
+                System.out.println(sumOfEven(test));   
+                System.out.println(sumOfOdd(test)); 
+            }
         }
         }while(choice != 4);
         
