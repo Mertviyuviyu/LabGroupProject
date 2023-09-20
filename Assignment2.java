@@ -55,6 +55,19 @@ public class Assignment2 {
         }
         return sum;
     }
+    public static int[] findAverageArr(int[] arr){
+        int sum=0;
+        int average;
+        for(int i=0;i<arr.length;i++){
+            sum=sum+arr[i];
+        }
+        average=sum/arr.length;
+        System.out.println("Average: "+average);
+        for(int i=0;i<arr.length;i++){
+            arr[i]=Math.abs(arr[i]-average);
+        }
+        return arr;
+    }
     public static void main(String[] args) {
         int[] test = createArray(6);
         System.out.println(Arrays.toString(test));
